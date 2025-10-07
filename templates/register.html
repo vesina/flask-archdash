@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Plotly in Flask</title>
+    <!-- Include Plotly.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <nav>
+<h1>{{ title }}</h1>
+  <ul>
+    
+      <li><a href="/archdash">Archdash Home</a></li> 
+      <li><a href="/archdash/project">Projects Data Chart</a></li> 
+        <li><a href="/archdash/usage/el">Monthly Electricity Usage Chart</a></li> 
+       <li><a href="/archdash/usage/gas">Monthly Natural Gas Usage Chart</a></li> 
+  </ul>
+</nav>
+</head>
+<body>
+
+
+  <form method="post">
+    <label for="username">Username</label>
+    <input name="username" id="username" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>

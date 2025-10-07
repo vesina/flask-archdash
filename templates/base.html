@@ -1,0 +1,24 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Demo Reports</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1>Demo Site Sql Reports</h1>
+  <ul>
+    
+      <li><a href="/">Home</a></li> 
+      <li><a href="/api/reports">Api</a></li> 
+        <li><a href="/reports">Reports</a></li> 
+       <li><a href="/html">Html Results</a></li> 
+       <li><a href="/api/results">JSON Results</a></li> 
+
+ 
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  <body>
+  {% block content %}{% endblock %}
+  </body>
+</section>
